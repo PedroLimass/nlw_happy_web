@@ -59,7 +59,6 @@ main h1 {
         /* shorthand background: image repeat position / size */
         padding: 5rem 2rem;
         background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
-        background-position: ;
     }
     header {
         display: flex;
