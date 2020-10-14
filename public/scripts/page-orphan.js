@@ -25,7 +25,7 @@ L.marker([-15.801785, -48.067594], { icon }).addTo(map)
 
 // Image Slide
 
-/*function selectImage(event) {
+function selectImage(event) {
     const button = event.currentTarget
 
     console.log(button.children)
@@ -46,21 +46,4 @@ L.marker([-15.801785, -48.067594], { icon }).addTo(map)
 
     //adicionar a classe .active para este botão
     button.classList.add('active');
-}*/
-function selectImage(event) {
-    const button = event.currentTarget
-
-    const buttons = document.querySelectorAll(".images button")
-    buttons.forEach(removeActiveClass)
-
-    function removeActiveClass(button) {
-        button.classList.remove('active');
-    }
-
-    const image = button.children[0]
-    const imageContainer = document.querySelector('.orphanage-details > img')
-
-    imageContainer.src = image.src
-
-    button.classList.add('active')
 }
